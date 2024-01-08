@@ -5,6 +5,7 @@ inputField=inputPart.querySelector("input");
 locationBtn=inputPart.querySelector("button");
 wIcon=document.querySelector(".weather-part img");
 arw=document.querySelector("header");
+
 apikey='381218ba6855a693a5fc8eecf065dc7f';
 
 arw.addEventListener('click',() => {
@@ -52,6 +53,8 @@ function onError(error){
     infoTxt.classList.add("error");
 }
 
+
+// for getting device location we use latitude and longitude but for any other location we use city name alone
 
 function fetchData(api)
 {
